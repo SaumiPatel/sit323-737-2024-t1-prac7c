@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Custom Style Sheet-->
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <h1>Test Calculator</h1>
+    <div class="container">
+      <table name="cal" id="cal" class="cal">
+        <tr id="row-1" class="row">
+          <td class="cols">
+            <input
+              type="number"
+              id="val1"
+              name="val1"
+              placeholder="enter your first value"
+            />
+            <input
+              type="number"
+              id="val2"
+              name="val2"
+              placeholder="enter your Second value"
+            />
+            <input type="text" id="ans" name="ans" placeholder="ans" />
+          </td>
+        </tr>
+        <tr id="row-2" class="row">
+          <td class="cols">
+            <button id="add" name="add">+</button>
+            <button id="sub" name="sub">-</button>
+            <button id="mul" name="mul">*</button>
+            <button id="reset" name="reset">AC</button>
+          </td>
+        </tr>
+        <tr id="row-3" class="row">
+          <td class="cols">
+            <button id="div" name="div">/</button>
+            <button id="exp" name="exp">x^y</button>
+            <button id="%" name="%">%</button>
+            <button id="root" name="root">√</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
